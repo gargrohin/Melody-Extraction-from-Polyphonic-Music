@@ -4,7 +4,11 @@ import librosa
 from scipy.io import loadmat
 import os
 
+'''
+The function `make_ground` creates the ground truth (midi like) file for each audio file.
 
+The functions `RCA` and `RPA` calculate the Raw Chroma Accuracy an the Raw Pitch Accuracy using the output of NMF and the ground truth. These functions are not used in the `make_groud` function, rather are imported separately in a jupyter notebook.
+'''
 
 def RCA():
     n=N
