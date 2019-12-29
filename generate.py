@@ -2,6 +2,13 @@ import numpy as np
 import librosa
 import os
 
+'''
+generate function: 
+input: wav file path, destination folder
+
+function: save the Power Spectrum matrix as a 'npz' file for melody extraction. 
+It also replaces close to 0 values with a threshold (eps)
+'''
 
 def generate(path,dest = './outs/'):
 

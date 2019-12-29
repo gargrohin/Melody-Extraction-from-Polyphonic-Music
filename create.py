@@ -1,6 +1,12 @@
 import os
 from generate import generate
 
+'''
+Code to preprocess the dataset.
+Uses the generate function from generate.py
+Stores the Power Spectrum of wav files from the dataset as a npz file
+'''
+
 def preprocess():
     ground_path = '/mnt/Stuff/Acads/UGP/mycode/ground'
     ground_list = [x.split('.')[0].strip() for x in os.listdir(ground_path)]
